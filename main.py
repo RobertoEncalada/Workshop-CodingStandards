@@ -63,7 +63,7 @@ class VacationPackage:
         discount = self.passenger.get_discount()
         total_cost -= total_cost * discount
 
-        return max(int(total_cost), 0)
+        return total_cost
 
 def main():
     destination = "Paris"
